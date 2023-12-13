@@ -14,8 +14,7 @@ sommes_par_energie = {source: donnees[source].sum() for source in donnees.column
 # Création du premier graphique pour la part des énergies par source
 labels = list(sommes_par_energie.keys())
 tailles = list(sommes_par_energie.values())
-# Afficher les tailles pour débugger
-print(tailles)
+
 plt.subplot(1, 2, 1)
 plt.pie(tailles, labels=labels, autopct='%1.1f%%')
 plt.title('Répartition des différentes sources d\'énergie')
