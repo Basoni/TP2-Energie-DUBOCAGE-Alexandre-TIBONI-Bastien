@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Charger le fichier CSV en ne prenant que les lignes paires (skiprows) et en spécifiant les colonnes pertinentes
+# Charger le fichier CSV  en spécifiant les colonnes pertinentes
 donnees = pd.read_csv('RTE_2020.csv', delimiter=',',  usecols=['Fioul', 'Charbon', 'Gaz', 'Nucleaire', 'Eolien', 'Solaire', 'Hydraulique',  'Bioenergies'])
 
 # Remplacer les valeurs manquantes par des zéros et convertir les données en entiers
